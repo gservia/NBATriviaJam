@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menuLogo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/nbalogo" />
+
+    <TextView
+        android:id="@+id/menuTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuLogo"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="NBA"
+        android:textColor="#ED1C24"
+        android:textSize="100dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/menuTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuTitle1"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Trivia Jam"
+        android:textColor="#ED1C24"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuTitle2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:text="Go!"
+        android:textColor="#ffffff"
+        android:textSize="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Gabriel Servia  |  CS50's Final Project  |  2020" />
+
+</RelativeLayout>

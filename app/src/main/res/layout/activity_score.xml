@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/scorePic"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/jordansix" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scorePic"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="You need 6 to win"
+        android:textColor="@color/my_blue"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/correctsAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="#37A119"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="Corrects"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/incorrectsAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correctsAns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/my_red"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Incorrects"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incorrectsAns"
+        android:layout_centerHorizontal="true"
+        android:background="@color/my_blue"
+        android:fontFamily="monospace"
+        android:text="Restart"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
